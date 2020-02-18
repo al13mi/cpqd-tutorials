@@ -42,7 +42,7 @@ Probably you will not see any Topology devices in the initial screen, so let's s
 
 
 ```bash
-$ cd cpqd-tutorials/06-onos-exercises
+$ cd cpqd-tutorials/05-onos-exercises
 
 $ sudo mn --topo=att --custom=rftesttopo.py --controller remote,ip=`*ONOS IP Address*` --switch ovs,protocols=OpenFlow13 --mac
 ```
@@ -205,7 +205,7 @@ Let's add a host connectivity intent for some two end-station hosts. You can use
 
 
 ```bash
-onos> add-host-intent 00:00:00:00:00:01/None 00:00:00:00:00:03/None
+onos> onos:add-host-intent 00:00:00:00:00:01/None 00:00:00:00:00:03/None
 
 onos> intents
 ```
